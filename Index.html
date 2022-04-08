@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Configurando elementos básicos do arquivo -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="JavaScript" src="Funções.js"></script>
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="shortcut icon" type="imagex/png" href="./Imagens/logo_para_titulo_da_pagina.ico"> <!-- Configurando logo que aparece na barra de endereço -->
+    <title>Calculadora do Iphone</title>
+</head> 
+
+<!-- Configurando o conteúdo exibido -->
+<body>
+    <form action="" name="calculadora">
+        <!-- Criando a <div> que exibe o "corpo" da calculadora-->
+        <div id="calc">
+            <input type="text" id="tela" name="tela">  <!-- Criando a tela que exibe os valores selecionados-->
+            <!-- Estruturando todas as <div> quem criam os botões de seleção-->
+            <div id="primeira">
+                <input type="button" value="AC" onclick="reset()">
+                <input type="button" value="+/-" onclick="modulo()">
+                <input type="button" value="%" onclick="porcentagem()">
+                <input type="button" value="÷" onclick="divisao()">
+            </div>
+            <div id="segunda">
+                <input type="button" value="7"  onclick="botao(value)">
+                <input type="button" value="8" onclick="botao(value)">
+                <input type="button" value="9" onclick="botao(value)">
+                <input type="button" value="×" onclick="multiplicacao()">
+            </div>
+            <div id="terceira">
+                <input type="button" value="4"  onclick="botao(value)">
+                <input type="button" value="5" onclick="botao(value)">
+                <input type="button" value="6" onclick="botao(value)">
+                <input type="button" value="-" onclick="subtracao()">
+            </div>
+            <div id="quarta">
+                <input type="button" value="1"  onclick="botao(value)">
+                <input type="button" value="2" onclick="botao(value)">
+                <input type="button" value="3" onclick="botao(value)">
+                <input type="button" value="+" onclick="adcao()">
+            </div>
+            <div id="quinta">
+                <input type="button" value="   0" id="0" onclick="botao(id)">
+                <input type="button" value="," id="." onclick="botao(id)">
+                <input type="button" value="=" onclick="resultado()">
+            </div>
+        </div>
+    </form>
+
+    <!-- Inserindo rodapé de créditos -->
+    <div class="footer">
+        <img src="Imagens/logo.png" width=30 height=30>
+        <h2>Design by Jonathan</h2>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- By: Jonathan - https://github.com/jonathanoliveirarocha -->
